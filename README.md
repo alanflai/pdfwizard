@@ -1,4 +1,4 @@
-![Alt pdfwizard logo](./Media/pdfwizard-logo-sm.png)
+![Alt pdfwizard logo](./media/pdfwizard-logo-sm.png)
 # pdfwizard 
 ---
 
