@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pymupdf
           pip install python-pptx
           
-      - Name: Build Executable
+      - name: Build Executable
         uses: Nuitka/Nuitka-Action@v0.4
         with:
           script-name: src/pdfwiz.py
