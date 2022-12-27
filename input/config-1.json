@@ -1,0 +1,105 @@
+{
+    "input_file": ".\\Input\\input_doc1.pdf",
+    "output_file": ".\\Output\\input_doc1-update-v1.pdf",
+    
+    "images": 
+        [
+            {
+                "_comment": "### First Logo ###",
+                "image_name": "image1",
+                "filename": ".\\Input\\logo1.png",
+                "W": 458,
+                "H": 489,
+                "aspect_ratio": 1.06
+            },
+            {
+                "_comment": "### Second Logo ###",
+                "image_name": "image2",
+                "filename": ".\\Input\\logo2.png",
+                "W": 419,
+                "H": 269,
+                "aspect_ratio": 0.64
+            }
+        ],
+    "pages": 
+        [
+            {
+                "_comment": "### First page ###",
+                "page_number": 1,
+                "items": [
+                            {   
+                                "_comment": "### Logo1 in the upper right side ###",
+                                "item_id": 0,
+                                "item_type": "image",
+                                "item_name": "image1",
+                                "item_center_point": [350, "item_id=3.H"],
+                                "item_width": 180
+                            },
+                            {
+                                "_comment": "### Text below  Logo1 in the upper rigth side ###",
+                                "item_id": 1,
+                                "item_type": "text",
+                                "item_name": "text1",
+                                "text": {
+                                    "value": ["EUROPEAN PARTNER"],
+                                    "font_name": "Helvetica-Bold",
+                                    "font_size": 10,
+                                    "inter_text": 8,
+                                    "space_after": 40
+                                },
+                                "item_center_point": [420,"item_id=2.H+30"]
+                            },
+                            {
+                                "_comment": "### Logo2  ###",
+                                "item_id": 2,
+                                "item_type": "image",
+                                "item_name": "image2",
+                                "item_center_point": [100,50],
+                                "item_width": 180
+                            },
+                            {
+                                "_comment": "### Text below  Logo1 in the upper rigth side ###",
+                                "item_id": 3,
+                                "item_type": "text",
+                                "item_name": "text1",
+                                "text": {
+                                    "value": ["This is SPARTA!!!!!!"],
+                                    "font_name": "Helvetica-Bold",
+                                    "font_size": 12,
+                                    "inter_text": 8,
+                                    "space_after": 40
+                                },
+                                "item_center_point": [300,10]
+                            }
+                        ]
+            },
+            {
+                "_comment": "### Last page ###",
+                "page_number": 2,
+                "items": [
+                    {
+                        "_comment": "### Logo2  ###",
+                        "item_id": 0,
+                        "item_type": "image",
+                        "item_name": "image2",
+                        "item_center_point": [250, "item_id=1.H"],
+                        "item_width": 180
+                    },
+                    {
+                        "_comment": "### Text below  Logo1 in the upper rigth side ###",
+                        "item_id": 1,
+                        "item_type": "text",
+                        "item_name": "text1",
+                        "text": {
+                            "value": ["This is SPARTA!!!!!!"],
+                            "font_name": "Helvetica-Bold",
+                            "font_size": 12,
+                            "inter_text": 8,
+                            "space_after": 40
+                        },
+                        "item_center_point": [100,200]
+                    }
+                    ]
+            }
+        ]
+}
