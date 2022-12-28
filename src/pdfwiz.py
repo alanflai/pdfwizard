@@ -8,6 +8,7 @@ from pdfutils import *
 import logging
 
 
+
 ###
 # Main function
 # usage
@@ -31,15 +32,13 @@ def main(argv,argc):
             if msg != None:
                 print(msg)
             help()
-            exit()
 
         case "meta":
             get_info(input)
-            exit()
 
         case "ann":
             get_annotations(input)
-            exit()
+
         case "add":
 
             print("The input file is the configuration file: %s" % input)
@@ -58,11 +57,10 @@ def main(argv,argc):
 
             # Save output to file
             input_file.save(config_file["output_file"])
-            exit()
 
         case _:
             print("Error: wrong unkown situation")
-            exit()
+    sys.exit()
     
 
 #####################

@@ -1,13 +1,13 @@
 {
-    "input_file": ".\\Input\\input_doc1.pdf",
-    "output_file": ".\\Output\\input_doc1-update-v1.pdf",
+    "input_file": ".\\input\\input_doc1.pdf",
+    "output_file": ".\\input\\input_doc1-update-v1.pdf",
     
     "images": 
         [
             {
                 "_comment": "### First Logo ###",
                 "image_name": "image1",
-                "filename": ".\\Input\\logo1.png",
+                "filename": ".\\media\\logo1.png",
                 "W": 458,
                 "H": 489,
                 "aspect_ratio": 1.06
@@ -15,7 +15,7 @@
             {
                 "_comment": "### Second Logo ###",
                 "image_name": "image2",
-                "filename": ".\\Input\\logo2.png",
+                "filename": ".\\media\\logo2.png",
                 "W": 419,
                 "H": 269,
                 "aspect_ratio": 0.64
