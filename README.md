@@ -19,6 +19,8 @@ The application use the following external python library:
 
 ### Installation
 ---
+#### Using virtual environment
+---
 The application needs Python 3.11 installed on your system. 
 
 Download from Github the zip file of the
@@ -36,7 +38,16 @@ Install python libraries dependencies with [pip](https://pip.pypa.io/en/stable/)
     [app_dir]\python -m pip install --upgrade pymupdf
     [app_dir]\pip install python-pptx
 
+#### Building one executable
+If you have a Windows based system then you can build the application as a single executable file.
 
+Follow these steps:
+1. Install the pyinstaller package
+    > pip install pyinstaller
+2. Execute pyinstaller into the project folder
+    > pyinstaller --onefile src\pywiz.py
+3. The application is packaged in a sigle exe file  into the folder 
+    > dist\
 ### Usage
 ---
 For **metadata** information extraction from an input pdf file give the following command: 
