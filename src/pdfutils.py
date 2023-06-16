@@ -337,3 +337,49 @@ def item_update(item, config_file, page_item, page):
             
         except Exception as e:
             print("Error: %s" % str(e))
+
+       
+###
+# page_update
+# - Input parameters:
+#   config_file     : dictionary from config file reading
+#   page_item       : current page dictionary from configuration
+#   page            : object from reading current pdf page 
+###
+def page_update(config_file, page_item, page):
+
+    # Page sizes: Width & Height in pixeld
+    W = page.rect.width
+    H = page.rect.height
+
+    # Clear the pdf status
+    page.clean_contents()
+
+    print("--- Page # %d Updating ------------" % page_item["page_number"])
+
+    # visited array
+    visited = [False] * len(page_item["items"])
+  
+    # queue
+    queue = []
+
+    # Loop over page's items
+    for id, item in enumerate(page_item["items"]):
+        # There is a reference with an unvisited item
+        if chek_ref(id, item["item_center_point"]):
+            queue.append(id)
+            print("[Add Queue] item id: %d - nome: %s" % (id,item["item_name"]))
+            continue
+        else:
+            print("=== No reference Check id %d con item %s " %(id,item["item_name"]))
+        try:
+            item_update(item, config_file, page_item, page)
+        except Exception as e:
+            print(str(e))
+       
+    # queue's element elaboration         
+    while queue:
+        q_item = queue.pop(0)
+        item = page_item["items"][q_item]
+        print("[POP Queue] item id: %d - nome: %s" % (id,item["item_name"]))
+        item_update(item, config_file, page_item, page)
