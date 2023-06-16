@@ -99,22 +99,24 @@ def export_page(input_file,prefix, page_number):
     pix.save("%s-page-%d-.png" % (prefix, int(page_number)))
     doc.close()
 
-###
-# page_to_png
-# -input params:
-# obj_pdf_file  : object pdf file read
-# page_number   : inter, page's number to export
-# prefix        : string, the prefix to add to png file
-# out_path      : string, output path
-###
-def page_to_png(obj_pdf_file, page_number, prefix, out_path):
+
+def page_to_png(obj_pdf_file, page_number, postfix, prefix, out_path):
+    """ page_to_png(), converte una pagina del documento PDF in un'immagine PNG
+
+    Args:
+        obj_pdf_file (_type_): object pdf file read
+        page_number (_type_): inter, page's number to export
+        postfix (_type_): int, page number to use as postfix into image's name file
+        prefix (_type_): string, the prefix to add to png file
+        out_path (_type_): string, output path
+    """
     # Open the pdf file
     doc = obj_pdf_file
     page = doc.load_page(int(page_number))  
     pix = page.get_pixmap()
 
     pix = page.get_pixmap()
-    pix.save("%s//%s-page-%d-.png" % (out_path,prefix, int(page_number+1)))
+    pix.save("%s//%s-page-%d-.png" % (out_path,prefix, postfix))
 
 ###
 # Get info from input file

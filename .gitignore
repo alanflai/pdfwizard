@@ -128,4 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-src/get_annotation.py
+*.pdf 
+*.ppt
+*.png
+*.csv
