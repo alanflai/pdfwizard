@@ -22,31 +22,31 @@ PAR_TEXT_FONT = 10
 
 INPUT_FILE = {
                 "input1": {
-                    "file_path": "C:\ExtraJob\Documents\Accor Orient Express Trains CRS V1.0 Nov 2022-rev-AS - Copia.pdf",
-                    "out_path": ".\Output\File1-Report.ppt",
-                    "csv_path": ".\Output\File1-Report.csv",
+                    "file_path": "C:\\ExtraJob\\Documents\\file1.pdf",
+                    "out_path": ".\\Output\\File1-Report.ppt",
+                    "csv_path": ".\\Output\\File1-Report.csv",
                     "tot_page": 160,
-                    "title": "Annotazioni sezione tecnica documento Accor",
+                    "title": "Annotazioni sezione tecnica documento file1",
                     "author": "",
                     "text_font_size": 28,
                     "page_size" : [1440, 1040]
                 },
                 "input2": {
-                    "file_path": "C:\ExtraJob\Documents\ID220930.1-Scopo di fornitura KBRSI_Dolcevita_01.pdf",
+                    "file_path": "C:\ExtraJob\Documents\File2.pdf",
                     "out_path": ".\Output\File2-Report.ppt",
                     "csv_path": ".\Output\File2-Report.csv",
                     "tot_page": 46,
-                    "title": "Annotazioni documento Knorr",
+                    "title": "Annotazioni documento File2",
                     "author": "",
                     "text_font_size": 16,
                     "page_size" : [1440, 1040]
                 },
                 "input3": {
-                    "file_path": "C:\ExtraJob\Documents\Accor Orient Express Trains CRS V1.0 Nov 2022-rev-FR.pdf",
+                    "file_path": "C:\ExtraJob\Documents\File3.pdf",
                     "out_path": ".\Output\File3-Report.ppt",
                     "csv_path": ".\Output\File3-Report.csv",
                     "tot_page": 160,
-                    "title": "Annotazioni sezione tecnica documento Accor",
+                    "title": "Annotazioni sezione tecnica documento File3",
                     "author": "",
                     "text_font_size": 28,
                     "page_size" : [1440, 1040]
